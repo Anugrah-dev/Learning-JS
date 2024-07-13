@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Self made calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+    <div id="calc-layout">
+        <input type="text" id="calc-display" readonly>
+        <div id="row-a">
+            <button class="row-a-1" onclick="calcOutput = '';document.querySelector('#calc-display').value = calcOutput;">C</button>
+            <button class="row-a-1" onclick="calcOutput = calcOutput + '1';document.querySelector('#calc-display').value = calcOutput;">1</button>
+            <button class="row-a-1" onclick="calcOutput = calcOutput + '2';document.querySelector('#calc-display').value = calcOutput;">2</button>
+            <button class="row-a-1" onclick="calcOutput = calcOutput + '+';document.querySelector('#calc-display').value = calcOutput;">+</button>
+            <button class="row-a-1" onclick="calcOutput = calcOutput + '3';document.querySelector('#calc-display').value = calcOutput;">3</button>
+            <button class="row-a-1" onclick="calcOutput = calcOutput + '4';document.querySelector('#calc-display').value = calcOutput;">4</button>
+            <button class="row-a-1" onclick="calcOutput = calcOutput + '-';document.querySelector('#calc-display').value = calcOutput;">-</button>
+            <button class="row-a-1" onclick="calcOutput = calcOutput + '5';document.querySelector('#calc-display').value = calcOutput;">5</button>
+            <button class="row-a-1" onclick="calcOutput = calcOutput + '6';document.querySelector('#calc-display').value = calcOutput;">6</button>
+            <button class="row-a-1" onclick="calcOutput = calcOutput + '*';document.querySelector('#calc-display').value = calcOutput;">*</button>
+            <button class="row-a-1" onclick="calcOutput = calcOutput + '7';document.querySelector('#calc-display').value = calcOutput;">7</button>
+            <button class="row-a-1" onclick="calcOutput = calcOutput + '8';document.querySelector('#calc-display').value = calcOutput;">8</button>
+            <button class="row-a-1" onclick="calcOutput = calcOutput + '/';document.querySelector('#calc-display').value = calcOutput;">/</button>
+            <button class="row-a-1" onclick="calcOutput = calcOutput + '9';document.querySelector('#calc-display').value = calcOutput;">9</button>
+            <button class="row-a-1" onclick="calcOutput = eval(calcOutput);document.querySelector('#calc-display').value = calcOutput;">=</button>
+            <button class="row-a-1" onclick="calcOutput = calcOutput + '0';document.querySelector('#calc-display').value = calcOutput;">0</button>
+            <button class="row-a-1" onclick="calcOutput = calcOutput + '.';document.querySelector('#calc-display').value = calcOutput;">.</button>
+        </div>
+    </div>
+
+    <script src="./calculator.js"></script>
+</body>
+</html>
