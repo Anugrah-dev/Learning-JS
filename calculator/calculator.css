@@ -2,6 +2,9 @@
     border: 2px solid rgb(121, 120, 120);
     height: 520px;
     width: 300px;
+    position: absolute;
+    top: 19%;
+    left: 40%;
 }
 #calc-display{
     height: 40px;
