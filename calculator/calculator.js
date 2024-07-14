@@ -1,2 +1,5 @@
 let calcOutput = '';
-document.querySelector('#calc-display').value = calcOutput;
+function abc(c, d=12){
+    document.querySelector('#calc-display').value = c;
+    //return c;
+}
