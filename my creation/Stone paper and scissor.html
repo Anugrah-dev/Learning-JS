@@ -10,31 +10,30 @@
 
     let generatedNumber = Math.random() * 3;
 
-    const usersSelection = 'You have chosen Stone';
 
     //how to generate random selections 👇🏻
 
-    let auotSelection;
+    let autoSelection;
 
     if(generatedNumber <= 1){
-        auotSelection = 'Stone';
+        autoSelection = 'Stone';
     } else if(generatedNumber > 1 && generatedNumber <= 2){
-        auotSelection = 'Paper'
+        autoSelection = 'Paper'
     } else if( generatedNumber > 2 && generatedNumber <= 3){
-        auotSelection = 'Scissor'
+        autoSelection = 'Scissor'
     }
 
 
     let finalMsg;
 
-    if(auotSelection === 'Stone'){
+    if(autoSelection === 'Stone'){
         finalMsg = `it's a tie`
-    } else if(auotSelection === 'Paper'){
+    } else if(autoSelection === 'Paper'){
         finalMsg = 'system WON'
-    }else if( auotSelection === 'Scissor'){
+    }else if( autoSelection === 'Scissor'){
         finalMsg = 'user WON'
     }
-    alert(`You have chosen Stone,   Auto choice is ${auotSelection} and ${finalMsg}`)
+    alert(`You have chosen Stone,   Auto choice is ${autoSelection} and ${finalMsg}`)
     " class="game-button">Stone</button>
 
 
@@ -42,28 +41,32 @@
 
     <button type="button" onclick="
 
+    generatedNumber = Math.random() * 3;
+
 
     //how to generate random selections 👇🏻
 
+    let autoSelection;
 
     if(generatedNumber <= 1){
-        auotSelection = 'Stone';
+        autoSelection = 'Stone';
     } else if(generatedNumber > 1 && generatedNumber <= 2){
-        auotSelection = 'Paper'
+        autoSelection = 'Paper'
     } else if( generatedNumber > 2 && generatedNumber <= 3){
-        auotSelection = 'Scissor'
+        autoSelection = 'Scissor'
     }
 
 
+    let finalMsg;
 
-    if(auotSelection === 'Stone'){
+    if(autoSelection === 'Stone'){
         finalMsg = 'User WON'
-    } else if(auotSelection === 'Paper'){
+    } else if(autoSelection === 'Paper'){
         finalMsg = `It's a Tie`
-    }else if( auotSelection === 'Scissor'){
+    }else if( autoSelection === 'Scissor'){
         finalMsg = 'System WON'
     }
-    alert(`You have chosen Paper,   Auto choice is ${auotSelection} and ${finalMsg}`)
+    alert(`You have chosen Paper,   Auto choice is ${autoSelection} and ${finalMsg}`)
     " class="game-button">Paper</button>
 
 
@@ -71,29 +74,32 @@
     <!-- Scissor button -->
     <button type="button" onclick="
 
+    generatedNumber = Math.random() * 3;
+
 
     //how to generate random selections 👇🏻
 
-
+    let autoSelection;
 
     if(generatedNumber <= 1){
-        auotSelection = 'Stone';
+        autoSelection = 'Stone';
     } else if(generatedNumber > 1 && generatedNumber <= 2){
-        auotSelection = 'Paper'
+        autoSelection = 'Paper'
     } else if( generatedNumber > 2 && generatedNumber <= 3){
-        auotSelection = 'Scissor'
+        autoSelection = 'Scissor'
     }
 
 
+    let finalMsg;
 
-    if(auotSelection === 'Stone'){
+    if(autoSelection === 'Stone'){
         finalMsg = 'System WON'
-    } else if(auotSelection === 'Paper'){
+    } else if(autoSelection === 'Paper'){
         finalMsg = 'User WON'
-    }else if( auotSelection === 'Scissor'){
+    }else if( autoSelection === 'Scissor'){
         finalMsg = `It's a Tie`
     }
-    alert(`You have chosen Scissor,   Auto choice is ${auotSelection} and ${finalMsg}`)
+    alert(`You have chosen Scissor,   Auto choice is ${autoSelection} and ${finalMsg}`)
     " class="game-button">Scissor</button>
 
     
