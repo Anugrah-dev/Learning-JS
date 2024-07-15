@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Creating a merthod to check if a function is odd or even</title>
+</head>
+<body>
+    <script>
+        function determineEvenOdd(inputNumber){
+          let remmainder = inputNumber % 2;
+          if (remmainder == 1){
+            return `Number ${inputNumber} is odd`
+        } else{
+            return `Number ${inputNumber} is even`
+        }
+        }
+        console.log(determineEvenOdd(4))
+        console.log(determineEvenOdd(5))
+        console.log(determineEvenOdd(0))
+        console.log(determineEvenOdd(7777777))
+        console.log(determineEvenOdd(9999998))
+    </script>
+</body>
+</html>
