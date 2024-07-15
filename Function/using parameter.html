@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Using Parameter</title>
+</head>
+<body>
+    <script>
+        function hello(noun = 'World'){
+            console.log(`Hello ${noun}`);
+        }
+        hello(); //when nothing is passed or the argument is undefined the function will pass the default value.
+        hello('Duniya'); //When something is passed as a argument function will take that as it's input and will proceed accordingly.
+    </script>
+</body>
+</html>
