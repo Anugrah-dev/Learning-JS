@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>local storage</title>
+</head>
+<body>
+    <script>
+        let product = {
+            name: 'Hoodie',
+            size: 'XL',
+            brand: 'Puma',
+        }
+        localStorage.setItem('product', JSON.stringify(product));
+        console.log(localStorage.getItem('product')); // it will give the stringifyed product 
+        // to destringify it use parse
+        console.log(JSON.parse(localStorage.getItem('product')))
+    </script>
+</body>
+</html>
