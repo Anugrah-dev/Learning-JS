@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Exercise 2</title>
+  </head>
+  <body>
+    <script>
+      let product1 = {
+        name: "Trouser",
+        size: "L",
+        fit: "Slim Fit",
+      };
+      let product2 = {
+        name: "Jeans",
+        size: "XL",
+        fit: "Regular Fit",
+      };
+      let product3 = {
+        name: "Trouser",
+        size: "xxL",
+        fit: "Slim Fit",
+      };
+
+      function identicalProducts(productNum1, productNum2) {
+        if (
+          typeof productNum1 !== "object" ||
+          typeof productNum2 !== "object"
+        ) {
+          console.error("Argument passed was not an OBJECT");
+          return false;
+        } // we dont necessarily have to pass else if we don't want to
+        if (productNum1 == productNum2) {
+          return true; // in this if we are checking that if the refrence and object property is same then return true i.e we are checking if the whole object is same or not
+        }
+        if (
+          productNum1.name === productNum2.name &&
+          productNum1.size === productNum2.size &&
+          productNum1.fit === productNum2.fit
+        ) {
+          return true;
+        } else {
+          return false;
+        } // in this we are checking that the individual object property are same or not
+      }
+      console.log(identicalProducts(product1,product2));
+      console.log(identicalProducts(product1,product3));
+      console.log(identicalProducts(product3,product2));
+      console.log(identicalProducts(product2,product2));
+    </script>
+  </body>
+</html>
