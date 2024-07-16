@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+        let product = {
+            name: 'Hoodie',
+            size: 'XL',
+            brand: 'Puma',
+        }
+
+        console.log(typeof product); // to print the type of product before stingifying
+        console.log(product); // to print the product before stringifying
+        let createString = JSON.stringify(product); // to sringify the product
+        console.log(typeof createString); // to print the type of product (that is createString now) after stringifying
+        console.log(createString); // to print the product (that is createString now) after stringifying 
+        let oldProduct = JSON.parse(createString);
+        console.log(typeof oldProduct); // to print the type of createString (that was product before stringifying) after parse (that is de stringifying in my language)
+        console.log(oldProduct); // to print the oldproduct (that was initially product and is goint to look like product again) 
+    </script>
+</body>
+</html>
