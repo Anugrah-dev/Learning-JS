@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Break and Continue</title>
+</head>
+<body>
+    <script>
+        // use of break (Finding at what index '11' is)
+        let array = [1, 3, 5, 7, 9, 11, 13, 15];
+        for (let index = 0; index < array.length; index = index + 1){
+            if (array[index] === 11){
+                console.log(`Number found at index ${index} `);
+                break;
+            }
+        }
+
+        // use of continue (Printing every odd number till 25)
+        for (let num = 0; 25 > num ; num = num + 1){
+            if(num % 2 == 0) {
+                continue;
+            }
+            console.log(num);
+        } 
+
+
+    </script>
+</body>
+</html> 
