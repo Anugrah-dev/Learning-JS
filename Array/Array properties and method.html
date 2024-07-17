@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array properties and methods</title>
+</head>
+<body>
+    <script>
+        let fruits = ['mango', 'orange', 'banana', 'peach', 'grapes'];
+        let number = [21, 42, 345, 111, 243, 672];
+        let obj = {
+            hello : 'world'
+        }
+
+        console.log(Array.isArray(fruits));
+        console.log(Array.isArray(number));
+        console.log(Array.isArray(obj));
+        
+        
+
+        console.log(fruits.length); 
+
+
+        fruits.push(22, number);
+        console.log(fruits);
+
+        number.push(22221);
+        console.log(number);
+
+        let x;
+        x = number.pop();
+        console.log(`popped ${x}`);
+
+        x = number.pop();
+        console.log(`popped ${x}`); // each time we use pop on an array it will remove the last element 
+
+        // shift and unshift work the same
+
+        number.shift();
+        console.log(number);
+
+
+
+        number.unshift('hello');
+        console.log(number);
+
+
+
+        fruits.splice(4,3);
+        console.log(fruits);
+
+
+
+        let array = [1, 4, 7, 9 , 11];
+        console.log(array.toString());
+        
+
+        number.sort();
+        console.log(number);
+
+        //destructuring array
+        let [a, b, c] = array;
+        console.log(`${a} ${b} ${c}`);
+    </script>
+</body>
+</html>
