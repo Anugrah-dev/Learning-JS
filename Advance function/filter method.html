@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+        let oddNumberInArray = array.filter(function(Number, index){
+            if (Number % 2 === 1){
+                return true;
+            } else {
+                return false;
+            }
+        });
+        console.log(oddNumberInArray);
+
+
+
+        let squares = array.map(function(Number){
+            return Number * Number ; 
+        })
+        console.log(squares);
+        
+    </script>
+</body>
+</html>
