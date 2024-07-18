@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>setTimeout and setInterval </title>
+</head>
+<body>
+    <script>
+        let alarm = function(){
+            console.log(`This alarm was set to go out after 10 sec of executing the function`)
+        }
+        // how to give timer id ---> just assume a variable = setTimeout
+        let timerId = setTimeout(alarm, 10000);
+        console.log(`aram is set with timerID: ${timerId}`)
+        // if we don't want to execute the code the we use clearTimeout
+        clearTimeout(timerId);
+
+        // starting set interval
+        console.log('setInterval');
+
+        let repetitiveAlarm = function(){
+            console.log(`make this alarm go off 5 times for 5 seconds. ${new Date()} `)
+        }
+        let intervalId = setInterval(repetitiveAlarm, 100); // we have set it to go out for 10000 milliseconds(10 seconds)
+        // so we have to use clearInterval to cancel it after 5 seconds (5000 milliseconds)
+        let clear = function(){
+            clearInterval(intervalId)
+        }; // a function to execute clearInterval
+        setTimeout(clear, 5000)
+    </script>
+</body>
+</html>
