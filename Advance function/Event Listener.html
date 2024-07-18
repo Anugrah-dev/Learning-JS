@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Event Listener</title>
+</head>
+<body>
+    <button class='btn'>click me</button>
+    <script>
+        let workOfTheButton = function(){
+             return console.log('button is clicked');
+        };
+        let button = document.querySelector('.btn');
+        button.addEventListener('click', workOfTheButton)
+
+        // we can add more than one event listener
+        let printDate = function(){
+            return console.log(`The date is ${new Date()}`)
+        };
+        button.addEventListener('click', printDate);
+        // if we want to remove an event listener
+        button.removeEventListener('click', workOfTheButton);
+    </script>
+</body>
+</html>
